@@ -2,8 +2,9 @@
 
 ## Anggota Kelompok
 
-* Dias Mayri
 * Rizal Hermawan
+* Dias Mayri
+
 
 ## Tentang Program
 
@@ -22,8 +23,8 @@ Diskon ditentukan berdasarkan jumlah belanja dan status membership pelanggan.
 
 **Input:**
 
-* `total` → jumlah total belanja.
-* `member` → status membership (`true` atau `false`).
+* `total` → untuk menentukan total jumlah belanja.
+* `member` → status membership jika member berarti true jika bukan member berarti false.
 
 **Output:**
 
@@ -52,7 +53,7 @@ Total Belanja - Potongan
 Total Bayar
 ```
 
-Kalau belanja kurang dari Rp100.000, diskon langsung menjadi 0%.
+Kalau belanja kurang dari Rp.100.000 berarti pelanggan tidak mendapatkan diskon, karena diskon hanya untuk total belanja diatas Rp.100.000.
 
 ## Source Code
 
@@ -90,7 +91,7 @@ void main() {
 |     Rp150.000 |   Ya   |    15% | **Rp127.500** |
 |     Rp300.000 |   Ya   |   15%* | **Rp275.000** |
 
-`*` Pada belanja Rp300.000, diskon 15% sebenarnya menghasilkan potongan Rp45.000. Namun karena batas maksimal potongan adalah Rp25.000, pelanggan hanya mendapat potongan Rp25.000.
+`*` Pada belanja Rp300.000, diskon 15% sebenarnya mendapatkan potongan Rp45.000. Tapi karena dibatasi potongan maksimal Rp.25.000, jadi pelanggan hanya mendapatkan potongan sebesar Rp.25.000.
 
 ## Kesimpulan
 
